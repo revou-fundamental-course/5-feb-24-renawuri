@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkulator Konversi Suhu</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Perubahan di sini -->
+</head>
+<body>
+
+<div class="container">
+    <h2>Kalkulator Konversi Suhu</h2>
+    <label for="inputCelsius">Celsius</label>
+    <input type="number" id="inputCelsius" placeholder="Masukkan suhu Celsius" oninput="convert('celsius')">
+
+    <label for="inputFahrenheit">Fahrenheit</label>
+    <input type="number" id="inputFahrenheit" placeholder="Masukkan suhu Fahrenheit" oninput="convert('fahrenheit')">
+
+    <div class="result" id="calculationInfo">
+        <div id="resultTitle" style="font-weight: bold;"></div>
+        <div id="resultContent" class="calculation-info"></div>
+    </div>
+
+    <button onclick="clearFields()">Clear</button>
+</div>
+
+<script src="js/script.js"></script> <!-- Perubahan di sini -->
+</body>
+</html>
